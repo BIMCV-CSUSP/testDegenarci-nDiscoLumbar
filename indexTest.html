@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+    	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    
+    	<!-- iOS meta tags -->
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no"/>
+    	
+    
+    	<link rel="stylesheet" type="text/css" href="papaya.css?build=1441" />
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type="text/javascript" src="papaya.js?build=1441"></script>
+    
+    	<title>Test Doble Visor</title>
+    
+    	<script type="text/javascript">
+var params = [];// parametros del visor para t1
+
+var paramsCP = []; // parametros del visor para t2
+
+        params["kioskMode"] = true;
+        params["noNewFiles"] = true;
+        params["showControls"] = false;
+        params["showControlBar"] = false;
+        params["showImageButtons"] = false;
+        params["expandable"] = false;
+        //params["images"] de momento no uso imagen por defecto
+
+        paramsCP["kioskMode"] = true;
+        paramsCP["noNewFiles"] = true;
+        paramsCP["showControls"] = false;
+        paramsCP["showControlBar"] = false;
+        paramsCP["showImageButtons"] = false;
+        paramsCP["expandable"] = false;
+
+function openZone(evt, zonaAf) {
+    // Declare all variables
+    var i, tabcontent, tablinks;
+
+    // Get all elements with class="tabcontent" and hide them
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+
+    // Get all elements with class="tablinks" and remove the class "active"
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // Show the current tab, and add an "active" class to the button that opened the tab
+    document.getElementById(zonaAf).style.display = "block";
+    evt.currentTarget.className += " active";
+} 
+
+</script>
+
+	</head>
+
+	<body><!-- Tab links -->
+
+    
+	  <div class="row"> <!-- Rows para una fila, cols columnas, con ayuda de css metemos todo en una línea (Papaya.css) -->
+		  <div class="col"><div class="papaya" data-params="params"></div></div>
+		  <div class="col"><div class="papaya" data-params="paramsCP"></div></div>
+    </div>
+    Plantilla Formulario:<br>
+
+
+    <div class="tab">
+      <button class="tablinks" onclick="openZone(event, 'L1-L2')">L1-L2</button>
+      <button class="tablinks" onclick="openZone(event, 'L2-L3')">L2-L3</button>
+      <button class="tablinks" onclick="openZone(event, 'L3-L4')">L3-L4</button>
+      <button class="tablinks" onclick="openZone(event, 'L4-L5')">L4-L5</button>
+      <button class="tablinks" onclick="openZone(event, 'L5-LS1')">L5-LS1</button>
+
+    </div><!-- we create the tab for each disc -->
+    <div id="L1-L2" class="tabcontent">
+      <h3>L1-L2</h3>
+      <form>
+          <fieldset>
+          <legend>Género:</legend>
+            <input type="radio" name="Genero" value="male" checked> Hombre<br>
+            <input type="radio" name="Genero" value="female"> Mujer<br>
+            <input type="radio" name="Genero" value="other"> Otro<br>
+          </fieldset>
+          <fieldset>
+          <legend>Super Stellar placeholder:</legend>
+            <input type="radio" name="Zona" value="L1-L2" checked> I don't know yet<br>
+            <input type="radio" name="Zona" value="L2-L3"> Neither do this one<br>
+     
+          </fieldset>
+          Otros problemas:<br>
+          <textarea name="Text1" cols="40" rows="5"></textarea>
+          <input type="submit" value="Enviar">
+        </form>   
+    </div>
+    <div id="L2-L3" class="tabcontent">
+      <h3>L2-L3</h3>
+      <form>
+          <fieldset>
+          <legend>Género:</legend>
+            <input type="radio" name="Genero" value="male" checked> Hombre<br>
+            <input type="radio" name="Genero" value="female"> Mujer<br>
+            <input type="radio" name="Genero" value="other"> Otro<br>
+          </fieldset>
+          <fieldset>
+          <legend>Super Stellar placeholder:</legend>
+            <input type="radio" name="Zona" value="L1-L2" checked> I don't know yet<br>
+            <input type="radio" name="Zona" value="L2-L3"> Neither do this one<br>
+     
+          </fieldset>
+          Otros problemas:<br>
+          <textarea name="Text1" cols="40" rows="5"></textarea>
+          <input type="submit" value="Enviar">
+        </form>   
+    </div>
+    <div id="L3-L4" class="tabcontent">
+  <h3>L3-L4</h3>
+  <form>
+      <fieldset>
+      <legend>Género:</legend>
+        <input type="radio" name="Genero" value="male" checked> Hombre<br>
+        <input type="radio" name="Genero" value="female"> Mujer<br>
+        <input type="radio" name="Genero" value="other"> Otro<br>
+      </fieldset>
+      <fieldset>
+      <legend>Super Stellar placeholder:</legend>
+        <input type="radio" name="Zona" value="L1-L2" checked> I don't know yet<br>
+        <input type="radio" name="Zona" value="L2-L3"> Neither do this one<br>
+ 
+      </fieldset>
+      Otros problemas:<br>
+      <textarea name="Text1" cols="40" rows="5"></textarea>
+      <input type="submit" value="Enviar">
+    </form>   
+    </div>
+    <div id="L4-L5" class="tabcontent">
+  <h3>L4-L5</h3>
+  <form>
+      <fieldset>
+      <legend>Género:</legend>
+        <input type="radio" name="Genero" value="male" checked> Hombre<br>
+        <input type="radio" name="Genero" value="female"> Mujer<br>
+        <input type="radio" name="Genero" value="other"> Otro<br>
+      </fieldset>
+      <fieldset>
+      <legend>Super Stellar placeholder:</legend>
+        <input type="radio" name="Zona" value="L1-L2" checked> I don't know yet<br>
+        <input type="radio" name="Zona" value="L2-L3"> Neither do this one<br>
+ 
+      </fieldset>
+      Otros problemas:<br>
+      <textarea name="Text1" cols="40" rows="5"></textarea>
+      <input type="submit" value="Enviar">
+    </form>   
+    </div>
+    <div id="L5-LS1" class="tabcontent">
+  <h3>L5-LS1</h3>
+  <form>
+      <fieldset>
+      <legend>Género:</legend>
+        <input type="radio" name="Genero" value="male" checked> Hombre<br>
+        <input type="radio" name="Genero" value="female"> Mujer<br>
+        <input type="radio" name="Genero" value="other"> Otro<br>
+      </fieldset>
+      <fieldset>
+      <legend>Super Stellar placeholder:</legend>
+        <input type="radio" name="Zona" value="L1-L2" checked> I don't know yet<br>
+        <input type="radio" name="Zona" value="L2-L3"> Neither do this one<br>
+ 
+      </fieldset>
+      Otros problemas:<br>
+      <textarea name="Text1" cols="40" rows="5"></textarea>
+      <input type="submit" value="Enviar">
+    </form>   
+</div>
+	</body>
+</html><!-- COWABUNGA! -->

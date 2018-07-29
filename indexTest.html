@@ -68,7 +68,7 @@ function openZone(evt, zonaAf) {
     </div>
     Plantilla Formulario:<br>
 
-
+    
     <div class="tab">
       <button class="tablinks" onclick="openZone(event, 'L1-L2')">L1-L2</button>
       <button class="tablinks" onclick="openZone(event, 'L2-L3')">L2-L3</button>
@@ -77,9 +77,10 @@ function openZone(evt, zonaAf) {
       <button class="tablinks" onclick="openZone(event, 'L5-LS1')">L5-LS1</button>
 
     </div><!-- we create the tab for each lumbar disc -->
+    
     <div id="L1-L2" class="tabcontent">
       <h3>L1-L2</h3>
-      <form>
+      <form action="/action_page.php" method="get">
           <fieldset>
           <legend>Género:</legend>
             <input type="radio" name="Genero" value="male" checked> Hombre<br>
@@ -93,87 +94,87 @@ function openZone(evt, zonaAf) {
      
           </fieldset>
           Otros problemas:<br>
-          <textarea name="Text1" cols="40" rows="5"></textarea>
+          <textarea name="Text" cols="40" rows="5"></textarea>
           <input type="submit" value="Enviar">
-        </form>   
+        
     </div>
     <div id="L2-L3" class="tabcontent">
       <h3>L2-L3</h3>
-      <form>
+      
           <fieldset>
           <legend>Género:</legend>
-            <input type="radio" name="Genero" value="male" checked> Hombre<br>
-            <input type="radio" name="Genero" value="female"> Mujer<br>
-            <input type="radio" name="Genero" value="other"> Otro<br>
+            <input type="radio" name="Genero1" value="male" checked> Hombre<br>
+            <input type="radio" name="Genero1" value="female"> Mujer<br>
+            <input type="radio" name="Genero1" value="other"> Otro<br>
           </fieldset>
           <fieldset>
           <legend>Super Stellar placeholder:</legend>
-            <input type="radio" name="Zona" value="L1-L2" checked> I don't know yet<br>
-            <input type="radio" name="Zona" value="L2-L3"> Neither do this one<br>
+            <input type="radio" name="Zona1" value="L1-L2" checked> I don't know yet<br>
+            <input type="radio" name="Zona1" value="L2-L3"> Neither do this one<br>
      
           </fieldset>
           Otros problemas:<br>
           <textarea name="Text1" cols="40" rows="5"></textarea>
           <input type="submit" value="Enviar">
-        </form>   
+         
     </div>
     <div id="L3-L4" class="tabcontent">
   <h3>L3-L4</h3>
-  <form>
+  
       <fieldset>
       <legend>Género:</legend>
-        <input type="radio" name="Genero" value="male" checked> Hombre<br>
-        <input type="radio" name="Genero" value="female"> Mujer<br>
-        <input type="radio" name="Genero" value="other"> Otro<br>
+        <input type="radio" name="Genero2" value="male" checked> Hombre<br>
+        <input type="radio" name="Genero2" value="female"> Mujer<br>
+        <input type="radio" name="Genero2" value="other"> Otro<br>
       </fieldset>
       <fieldset>
       <legend>Super Stellar placeholder:</legend>
-        <input type="radio" name="Zona" value="L1-L2" checked> I don't know yet<br>
-        <input type="radio" name="Zona" value="L2-L3"> Neither do this one<br>
+        <input type="radio" name="Zona2" value="L1-L2" checked> I don't know yet<br>
+        <input type="radio" name="Zona2" value="L2-L3"> Neither do this one<br>
  
       </fieldset>
       Otros problemas:<br>
-      <textarea name="Text1" cols="40" rows="5"></textarea>
+      <textarea name="Text2" cols="40" rows="5"></textarea>
       <input type="submit" value="Enviar">
-    </form>   
+       
     </div>
     <div id="L4-L5" class="tabcontent">
   <h3>L4-L5</h3>
-  <form>
+  
       <fieldset>
       <legend>Género:</legend>
-        <input type="radio" name="Genero" value="male" checked> Hombre<br>
-        <input type="radio" name="Genero" value="female"> Mujer<br>
-        <input type="radio" name="Genero" value="other"> Otro<br>
+        <input type="radio" name="Genero3" value="male" checked> Hombre<br>
+        <input type="radio" name="Genero3" value="female"> Mujer<br>
+        <input type="radio" name="Genero3" value="other"> Otro<br>
       </fieldset>
       <fieldset>
       <legend>Super Stellar placeholder:</legend>
-        <input type="radio" name="Zona" value="L1-L2" checked> I don't know yet<br>
-        <input type="radio" name="Zona" value="L2-L3"> Neither do this one<br>
+        <input type="radio" name="Zona3" value="L1-L2" checked> I don't know yet<br>
+        <input type="radio" name="Zona3" value="L2-L3"> Neither do this one<br>
  
       </fieldset>
       Otros problemas:<br>
-      <textarea name="Text1" cols="40" rows="5"></textarea>
+      <textarea name="Text3" cols="40" rows="5"></textarea>
       <input type="submit" value="Enviar">
-    </form>   
+      
     </div>
     <div id="L5-LS1" class="tabcontent">
   <h3>L5-LS1</h3>
-  <form>
+ 
       <fieldset>
       <legend>Género:</legend>
-        <input type="radio" name="Genero" value="male" checked> Hombre<br>
-        <input type="radio" name="Genero" value="female"> Mujer<br>
-        <input type="radio" name="Genero" value="other"> Otro<br>
+        <input type="radio" name="Genero4" value="male" checked> Hombre<br>
+        <input type="radio" name="Genero4" value="female"> Mujer<br>
+        <input type="radio" name="Genero4" value="other"> Otro<br>
       </fieldset>
       <fieldset>
       <legend>Super Stellar placeholder:</legend>
-        <input type="radio" name="Zona" value="L1-L2" checked> I don't know yet<br>
-        <input type="radio" name="Zona" value="L2-L3"> Neither do this one<br>
+        <input type="radio" name="Zona4" value="L1-L2" checked> I don't know yet<br>
+        <input type="radio" name="Zona4" value="L2-L3"> Neither do this one<br>
  
       </fieldset>
       Otros problemas:<br>
-      <textarea name="Text1" cols="40" rows="5"></textarea>
+      <textarea name="Text4" cols="40" rows="5"></textarea>
       <input type="submit" value="Enviar">
     </form>   
 </div>

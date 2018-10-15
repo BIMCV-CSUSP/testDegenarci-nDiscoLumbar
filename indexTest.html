@@ -82,100 +82,227 @@ function openZone(evt, zonaAf) {
       <h3>L1-L2</h3>
       <form action="/action_page.php" method="get">
           <fieldset>
-          <legend>Género:</legend>
-            <input type="radio" name="Genero" value="male" checked> Hombre<br>
-            <input type="radio" name="Genero" value="female"> Mujer<br>
-            <input type="radio" name="Genero" value="other"> Otro<br>
+          <legend>Pfirrmann Grade:</legend>
+            <input type="radio" name="Pfirrmann" value="pg1" checked> 1 -homogeneous disc, hyperintense, normal height<br>
+            <input type="radio" name="Pfirrmann" value="pg2"> 2 -inhomogeneous disc, hyperintense, normal height<br>
+            <input type="radio" name="Pfirrmann" value="pg3"> 3 -inhomogeneous disc, isointense, normal/decreased height<br>
+            <input type="radio" name="Pfirrmann" value="pg4"> 4 -inhomogeneous disc, hypointense, normal/decreased height<br> 
+            <input type="radio" name="Pfirrmann" value="pg5"> 5 -inhomogeneous disc, hypointense, collapsed disc<br>
           </fieldset>
           <fieldset>
-          <legend>Super Stellar placeholder:</legend>
-            <input type="radio" name="Zona" value="L1-L2" checked> I don't know yet<br>
-            <input type="radio" name="Zona" value="L2-L3"> Neither do this one<br>
-     
+          <legend>Disc Narrowing:</legend>
+            <input type="radio" name="Narrowing" value="1" checked> 1 -normal, disc higher than the upper disc<br>
+            <input type="radio" name="Narrowing" value="2"> 2 -slight, disc as high as the upper disc if it is normal<br>
+            <input type="radio" name="Narrowing" value="3"> 3 -moderate, disc narrower than the upper disc if it is normal<br>
+            <input type="radio" name="Narrowing" value="4"> 4 -severe, endplates almost in contact'],
+        value='1 -normal, disc higher than the upper disc<br>
           </fieldset>
-          Otros problemas:<br>
+          <fieldset>
+          <legend>Spondylolisthesis:</legend>
+            <input type="radio" name="Spondylolisthesis" value="0" checked> 0 -normal<br>
+            <input type="radio" name="Spondylolisthesis" value="1"> 1 -presence of vertebral slip<br>
+          </fieldset>
+          <fieldset>
+          <legend>Central Canal Stenosis:</legend>
+            <input type="radio" name="Stenosis" value="0" checked> 0 -normal<br>
+            <input type="radio" name="Stenosis" value="1"> 1 -narrow/contricted central canal<br>
+         </fieldset>
+          <fieldset>
+          <legend>Marrow Changes:</legend>
+            <input type="radio" name="Marrow" value="0" checked> 1 -normal<br>
+            <input type="radio" name="Marrow" value="1"> 1 -presence of signal intensity variation in the endplate region<br>
+            </fieldset>
+          <fieldset>
+          <legend>Disc Prolapse:</legend>
+            <input type="radio" name="Prolapse" value="0" checked> 1 -normal<br>
+            <input type="radio" name="Prolapse" value="1"> 1 -Disc Protrusion<br>
+            <input type="radio" name="Prolapse" value="2"> 2 -Disc Herniation<br>
+            </fieldset>
+          Other Problems:<br>
           <textarea name="Text" cols="40" rows="5"></textarea>
-          <input type="submit" value="Enviar">
+          <input type="submit" value="Submit">
         
     </div>
     <div id="L2-L3" class="tabcontent">
       <h3>L2-L3</h3>
       
-          <fieldset>
-          <legend>Género:</legend>
-            <input type="radio" name="Genero1" value="male" checked> Hombre<br>
-            <input type="radio" name="Genero1" value="female"> Mujer<br>
-            <input type="radio" name="Genero1" value="other"> Otro<br>
+                  <fieldset>
+          <legend>Pfirrmann Grade:</legend>
+            <input type="radio" name="Pfirrmann2" value="pg1" checked> 1 -homogeneous disc, hyperintense, normal height<br>
+            <input type="radio" name="Pfirrmann2" value="pg2"> 2 -inhomogeneous disc, hyperintense, normal height<br>
+            <input type="radio" name="Pfirrmann2" value="pg3"> 3 -inhomogeneous disc, isointense, normal/decreased height<br>
+            <input type="radio" name="Pfirrmann2" value="pg4"> 4 -inhomogeneous disc, hypointense, normal/decreased height<br> 
+            <input type="radio" name="Pfirrmann2" value="pg5"> 5 -inhomogeneous disc, hypointense, collapsed disc<br>
           </fieldset>
           <fieldset>
-          <legend>Super Stellar placeholder:</legend>
-            <input type="radio" name="Zona1" value="L1-L2" checked> I don't know yet<br>
-            <input type="radio" name="Zona1" value="L2-L3"> Neither do this one<br>
-     
+          <legend>Disc Narrowing:</legend>
+            <input type="radio" name="Narrowing2" value="1" checked> 1 -normal, disc higher than the upper disc<br>
+            <input type="radio" name="Narrowing2" value="2"> 2 -slight, disc as high as the upper disc if it is normal<br>
+            <input type="radio" name="Narrowing2" value="3"> 3 -moderate, disc narrower than the upper disc if it is normal<br>
+            <input type="radio" name="Narrowing2" value="4"> 4 -severe, endplates almost in contact'],
+        value='1 -normal, disc higher than the upper disc<br>
           </fieldset>
-          Otros problemas:<br>
-          <textarea name="Text1" cols="40" rows="5"></textarea>
-          <input type="submit" value="Enviar">
+          <fieldset>
+          <legend>Spondylolisthesis:</legend>
+            <input type="radio" name="Spondylolisthesis2" value="0" checked> 0 -normal<br>
+            <input type="radio" name="Spondylolisthesis2" value="1"> 1 -presence of vertebral slip<br>
+          </fieldset>
+          <fieldset>
+          <legend>Central Canal Stenosis:</legend>
+            <input type="radio" name="Stenosis2" value="0" checked> 0 -normal<br>
+            <input type="radio" name="Stenosis2" value="1"> 1 -narrow/contricted central canal<br>
+         </fieldset>
+          <fieldset>
+          <legend>Marrow Changes:</legend>
+            <input type="radio" name="Marrow2" value="0" checked> 1 -normal<br>
+            <input type="radio" name="Marrow2" value="1"> 1 -presence of signal intensity variation in the endplate region<br>
+            </fieldset>
+          <fieldset>
+          <legend>Disc Prolapse:</legend>
+            <input type="radio" name="Prolapse2" value="0" checked> 1 -normal<br>
+            <input type="radio" name="Prolapse2" value="1"> 1 -Disc Protrusion<br>
+            <input type="radio" name="Prolapse2" value="2"> 2 -Disc Herniation<br>
+            </fieldset>
+          Other Problems:<br>
+          <textarea name="Text2" cols="40" rows="5"></textarea>
+          <input type="submit" value="Submit">
          
     </div>
     <div id="L3-L4" class="tabcontent">
   <h3>L3-L4</h3>
   
-      <fieldset>
-      <legend>Género:</legend>
-        <input type="radio" name="Genero2" value="male" checked> Hombre<br>
-        <input type="radio" name="Genero2" value="female"> Mujer<br>
-        <input type="radio" name="Genero2" value="other"> Otro<br>
-      </fieldset>
-      <fieldset>
-      <legend>Super Stellar placeholder:</legend>
-        <input type="radio" name="Zona2" value="L1-L2" checked> I don't know yet<br>
-        <input type="radio" name="Zona2" value="L2-L3"> Neither do this one<br>
- 
-      </fieldset>
-      Otros problemas:<br>
-      <textarea name="Text2" cols="40" rows="5"></textarea>
-      <input type="submit" value="Enviar">
+                  <fieldset>
+          <legend>Pfirrmann Grade:</legend>
+            <input type="radio" name="Pfirrmann3" value="pg1" checked> 1 -homogeneous disc, hyperintense, normal height<br>
+            <input type="radio" name="Pfirrmann3" value="pg2"> 2 -inhomogeneous disc, hyperintense, normal height<br>
+            <input type="radio" name="Pfirrmann3" value="pg3"> 3 -inhomogeneous disc, isointense, normal/decreased height<br>
+            <input type="radio" name="Pfirrmann3" value="pg4"> 4 -inhomogeneous disc, hypointense, normal/decreased height<br> 
+            <input type="radio" name="Pfirrmann3" value="pg5"> 5 -inhomogeneous disc, hypointense, collapsed disc<br>
+          </fieldset>
+          <fieldset>
+          <legend>Disc Narrowing:</legend>
+            <input type="radio" name="Narrowing3" value="1" checked> 1 -normal, disc higher than the upper disc<br>
+            <input type="radio" name="Narrowing3" value="2"> 2 -slight, disc as high as the upper disc if it is normal<br>
+            <input type="radio" name="Narrowing3" value="3"> 3 -moderate, disc narrower than the upper disc if it is normal<br>
+            <input type="radio" name="Narrowing3" value="4"> 4 -severe, endplates almost in contact'],
+        value='1 -normal, disc higher than the upper disc<br>
+          </fieldset>
+          <fieldset>
+          <legend>Spondylolisthesis:</legend>
+            <input type="radio" name="Spondylolisthesis3" value="0" checked> 0 -normal<br>
+            <input type="radio" name="Spondylolisthesis3" value="1"> 1 -presence of vertebral slip<br>
+          </fieldset>
+          <fieldset>
+          <legend>Central Canal Stenosis:</legend>
+            <input type="radio" name="Stenosis3" value="0" checked> 0 -normal<br>
+            <input type="radio" name="Stenosis3" value="1"> 1 -narrow/contricted central canal<br>
+         </fieldset>
+          <fieldset>
+          <legend>Marrow Changes:</legend>
+            <input type="radio" name="Marrow3" value="0" checked> 1 -normal<br>
+            <input type="radio" name="Marrow3" value="1"> 1 -presence of signal intensity variation in the endplate region<br>
+            </fieldset>
+          <fieldset>
+          <legend>Disc Prolapse:</legend>
+            <input type="radio" name="Prolapse3" value="0" checked> 1 -normal<br>
+            <input type="radio" name="Prolapse3" value="1"> 1 -Disc Protrusion<br>
+            <input type="radio" name="Prolapse3" value="2"> 2 -Disc Herniation<br>
+            </fieldset>
+          Other Problems:<br>
+          <textarea name="Text3" cols="40" rows="5"></textarea>
+          <input type="submit" value="Submit">
+         
        
     </div>
     <div id="L4-L5" class="tabcontent">
   <h3>L4-L5</h3>
   
-      <fieldset>
-      <legend>Género:</legend>
-        <input type="radio" name="Genero3" value="male" checked> Hombre<br>
-        <input type="radio" name="Genero3" value="female"> Mujer<br>
-        <input type="radio" name="Genero3" value="other"> Otro<br>
-      </fieldset>
-      <fieldset>
-      <legend>Super Stellar placeholder:</legend>
-        <input type="radio" name="Zona3" value="L1-L2" checked> I don't know yet<br>
-        <input type="radio" name="Zona3" value="L2-L3"> Neither do this one<br>
- 
-      </fieldset>
-      Otros problemas:<br>
-      <textarea name="Text3" cols="40" rows="5"></textarea>
-      <input type="submit" value="Enviar">
+          <fieldset>
+          <legend>Pfirrmann Grade:</legend>
+            <input type="radio" name="Pfirrmann4" value="pg1" checked> 1 -homogeneous disc, hyperintense, normal height<br>
+            <input type="radio" name="Pfirrmann4" value="pg2"> 2 -inhomogeneous disc, hyperintense, normal height<br>
+            <input type="radio" name="Pfirrmann4" value="pg3"> 3 -inhomogeneous disc, isointense, normal/decreased height<br>
+            <input type="radio" name="Pfirrmann4" value="pg4"> 4 -inhomogeneous disc, hypointense, normal/decreased height<br> 
+            <input type="radio" name="Pfirrmann4" value="pg5"> 5 -inhomogeneous disc, hypointense, collapsed disc<br>
+          </fieldset>
+          <fieldset>
+          <legend>Disc Narrowing:</legend>
+            <input type="radio" name="Narrowing4" value="1" checked> 1 -normal, disc higher than the upper disc<br>
+            <input type="radio" name="Narrowing4" value="2"> 2 -slight, disc as high as the upper disc if it is normal<br>
+            <input type="radio" name="Narrowing4" value="3"> 3 -moderate, disc narrower than the upper disc if it is normal<br>
+            <input type="radio" name="Narrowing4" value="4"> 4 -severe, endplates almost in contact'],
+        value='1 -normal, disc higher than the upper disc<br>
+          </fieldset>
+          <fieldset>
+          <legend>Spondylolisthesis:</legend>
+            <input type="radio" name="Spondylolisthesis4" value="0" checked> 0 -normal<br>
+            <input type="radio" name="Spondylolisthesis4" value="1"> 1 -presence of vertebral slip<br>
+          </fieldset>
+          <fieldset>
+          <legend>Central Canal Stenosis:</legend>
+            <input type="radio" name="Stenosis4" value="0" checked> 0 -normal<br>
+            <input type="radio" name="Stenosis4" value="1"> 1 -narrow/contricted central canal<br>
+         </fieldset>
+          <fieldset>
+          <legend>Marrow Changes:</legend>
+            <input type="radio" name="Marrow4" value="0" checked> 1 -normal<br>
+            <input type="radio" name="Marrow4" value="1"> 1 -presence of signal intensity variation in the endplate region<br>
+            </fieldset>
+          <fieldset>
+          <legend>Disc Prolapse:</legend>
+            <input type="radio" name="Prolapse4" value="0" checked> 1 -normal<br>
+            <input type="radio" name="Prolapse4" value="1"> 1 -Disc Protrusion<br>
+            <input type="radio" name="Prolapse4" value="2"> 2 -Disc Herniation<br>
+            </fieldset>
+          Other Problems:<br>
+          <textarea name="Text4" cols="40" rows="5"></textarea>
+          <input type="submit" value="Submit">
+         
       
     </div>
     <div id="L5-LS1" class="tabcontent">
   <h3>L5-LS1</h3>
  
       <fieldset>
-      <legend>Género:</legend>
-        <input type="radio" name="Genero4" value="male" checked> Hombre<br>
-        <input type="radio" name="Genero4" value="female"> Mujer<br>
-        <input type="radio" name="Genero4" value="other"> Otro<br>
-      </fieldset>
-      <fieldset>
-      <legend>Super Stellar placeholder:</legend>
-        <input type="radio" name="Zona4" value="L1-L2" checked> I don't know yet<br>
-        <input type="radio" name="Zona4" value="L2-L3"> Neither do this one<br>
- 
-      </fieldset>
-      Otros problemas:<br>
-      <textarea name="Text4" cols="40" rows="5"></textarea>
-      <input type="submit" value="Enviar">
+          <legend>Pfirrmann Grade:</legend>
+            <input type="radio" name="Pfirrmann5" value="pg1" checked> 1 -homogeneous disc, hyperintense, normal height<br>
+            <input type="radio" name="Pfirrmann5" value="pg2"> 2 -inhomogeneous disc, hyperintense, normal height<br>
+            <input type="radio" name="Pfirrmann5" value="pg3"> 3 -inhomogeneous disc, isointense, normal/decreased height<br>
+            <input type="radio" name="Pfirrmann5" value="pg4"> 4 -inhomogeneous disc, hypointense, normal/decreased height<br> 
+            <input type="radio" name="Pfirrmann5" value="pg5"> 5 -inhomogeneous disc, hypointense, collapsed disc<br>
+          </fieldset>
+          <fieldset>
+          <legend>Disc Narrowing:</legend>
+            <input type="radio" name="Narrowing5" value="1" checked> 1 -normal, disc higher than the upper disc<br>
+            <input type="radio" name="Narrowing5" value="2"> 2 -slight, disc as high as the upper disc if it is normal<br>
+            <input type="radio" name="Narrowing5" value="3"> 3 -moderate, disc narrower than the upper disc if it is normal<br>
+            <input type="radio" name="Narrowing5" value="4"> 4 -severe, endplates almost in contact'],
+        value='1 -normal, disc higher than the upper disc<br>
+          </fieldset>
+          <fieldset>
+          <legend>Spondylolisthesis:</legend>
+            <input type="radio" name="Spondylolisthesis5" value="0" checked> 0 -normal<br>
+            <input type="radio" name="Spondylolisthesis5" value="1"> 1 -presence of vertebral slip<br>
+          </fieldset>
+          <fieldset>
+          <legend>Central Canal Stenosis:</legend>
+            <input type="radio" name="Stenosis5" value="0" checked> 0 -normal<br>
+            <input type="radio" name="Stenosis5" value="1"> 1 -narrow/contricted central canal<br>
+         </fieldset>
+          <fieldset>
+          <legend>Marrow Changes:</legend>
+            <input type="radio" name="Marrow5" value="0" checked> 1 -normal<br>
+            <input type="radio" name="Marrow5" value="1"> 1 -presence of signal intensity variation in the endplate region<br>
+            </fieldset>
+          <fieldset>
+          <legend>Disc Prolapse:</legend>
+            <input type="radio" name="Prolapse5" value="0" checked> 1 -normal<br>
+            <input type="radio" name="Prolapse5" value="1"> 1 -Disc Protrusion<br>
+            <input type="radio" name="Prolapse5" value="2"> 2 -Disc Herniation<br>
+            </fieldset>
+          Other Problems:<br>
+          <textarea name="Text5" cols="40" rows="5"></textarea>
+          <input type="submit" value="Submit">
     </form>   
 </div>
 	</body>
